@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-    """
-    document
-    """
+"""
+document
+"""
     
     
-    class Square:
-        """Class Square(EMPTY)"""
-        pass
+class Square:
+    """Class Square(EMPTY)"""
+    pass
