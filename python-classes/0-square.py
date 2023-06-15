@@ -2,8 +2,8 @@
 """
 document
 """
-    
-    
+
+
 class Square:
     """Class Square(EMPTY)"""
     pass
