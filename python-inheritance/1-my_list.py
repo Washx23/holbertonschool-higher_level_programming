@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-1. My list
-"""
+"""1. My list"""
 
 
 class MyList(list):
