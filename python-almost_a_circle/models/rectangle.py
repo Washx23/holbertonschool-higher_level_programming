@@ -63,7 +63,7 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
-        """return area"""
+        """ area result """
         return self.__width * self.__height
 
     def display(self):
@@ -81,3 +81,28 @@ class Rectangle(Base):
             if i is not (self.__height):
                 new_str += "\n"
         print(new_str)
+
+    def __str__(self):
+        return f'[Rectangle] ({self.id}) {self.__x}/{self.__y} \
+- {self.__width}/{self.__height}'
+
+    def update(self, *args, **kwargs):
+        """ update Rectangle """
+        if args:
+            new_list = ["id", "width", "height", "x", "y"]
+            for k, v in zip(new_list, args):
+                setattr(self, k, v)
+        else:
+            for c, p in kwargs.items():
+                setattr(self, c, p)
+
+    def to_dictionary(self):
+        """dictionary"""
+        my_dict = {
+            "id": self.id,
+            "width": self.__width,
+            "height": self.__height,
+            "x": self.__x,
+            "y": self.__y
+            }
+        return my_dict
