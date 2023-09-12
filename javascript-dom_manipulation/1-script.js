@@ -1,4 +1,4 @@
-// Select the element with id "red_header"
+// documents
 var redHeader = document.getElementById("red_header");
 
 
